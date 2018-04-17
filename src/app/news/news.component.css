@@ -1,0 +1,9 @@
+.news {
+  width: 960px;
+  margin: 0 auto;
+  
+  /* border: 1px solid gray;
+  border-radius: 5px; */
+
+  list-style: none;
+}

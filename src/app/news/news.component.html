@@ -1,0 +1,10 @@
+<div *ngIf="news">
+  <ul class="news">
+    <li class="news__item" *ngFor="let item of news">
+      <h2 class="news__title">
+        <a href="" class="news__link">{{ item.title }}</a>
+      </h2>
+      <p class="news__previewText">{{ item.body }}</p>
+    </li>
+  </ul>
+</div>
