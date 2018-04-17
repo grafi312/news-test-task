@@ -4,7 +4,7 @@
       <h2 class="news__title">
         <a routerLink="/news/{{ item.id }}" class="news__link">{{ item.title }}</a>
       </h2>
-      <p class="news__previewText">{{ item.body }}</p>
+      <p class="news__previewText">{{ item.body | truncate:100 }}</p>
     </li>
   </ul>
 </div>

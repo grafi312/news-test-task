@@ -8,12 +8,15 @@ import { NewsService } from './news.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 
+import { TruncatePipe } from './truncate.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
-    NewsDetailComponent
+    NewsDetailComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,
