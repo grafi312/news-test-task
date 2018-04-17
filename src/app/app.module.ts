@@ -10,6 +10,8 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 import { TruncatePipe } from './truncate.pipe';
+import { RatingComponent } from './rating/rating.component';
+import { RatingService } from './rating.service';
 
 
 @NgModule({
@@ -17,14 +19,15 @@ import { TruncatePipe } from './truncate.pipe';
     AppComponent,
     NewsComponent,
     NewsDetailComponent,
-    TruncatePipe
+    TruncatePipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [NewsService],
+  providers: [NewsService, RatingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

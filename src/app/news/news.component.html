@@ -5,6 +5,7 @@
         <a routerLink="/news/{{ item.id }}" class="news__link">{{ item.title }}</a>
       </h2>
       <p class="news__previewText">{{ item.body | truncate:100 }}</p>
+      <app-rating [newsId]="item.id"></app-rating>
     </li>
   </ul>
 </div>
