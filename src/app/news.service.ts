@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
@@ -8,10 +9,12 @@ import { NEWS } from './mock-news';
 @Injectable()
 export class NewsService {
 
-  constructor() { }
+  private newsUrl: string = 'https://jsonplaceholder.typicode.com/posts';
+
+  constructor(private http: HttpClient) { }
 
   getNews(): Observable<News[]> {
-    return of(NEWS);
+    return this.http.get<News[]>(this.newsUrl);
   }
 
   getNewsById(id): Observable<News> {

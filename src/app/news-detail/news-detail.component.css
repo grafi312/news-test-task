@@ -3,8 +3,18 @@
   padding: 10px;
   margin: 0 auto;
   
+  background-color: #fff;
+
+  box-shadow: 0 0 3px gray;
+
   border: 1px solid gray;
   border-radius: 5px;
+}
 
-  list-style: none;
+.news-detail__title {
+  margin-bottom: 10px;
+}
+
+.news-detail__text {
+  margin-bottom: 10px;
 }
