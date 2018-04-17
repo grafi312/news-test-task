@@ -18,7 +18,9 @@ export class NewsService {
   }
 
   getNewsById(id): Observable<News> {
-    return of(NEWS.find(news => news.id === id));
+    const url = `${this.newsUrl}/${id}`;
+
+    return this.http.get<News>(url);
   }
 
 }
