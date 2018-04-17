@@ -14,4 +14,8 @@ export class NewsService {
     return of(NEWS);
   }
 
+  getNewsById(id): Observable<News> {
+    return of(NEWS.find(news => news.id === id));
+  }
+
 }
