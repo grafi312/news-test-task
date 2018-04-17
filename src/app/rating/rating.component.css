@@ -1,0 +1,59 @@
+.rating {
+  display: inline-block; 
+
+  background-color: #efefef;
+}
+
+.rating__button-negative {
+  display: inline-block;
+  padding: 5px 10px;
+
+  vertical-align: baseline;
+  text-align: center;
+
+  color: #fff;
+
+  font-weight: bold;
+
+  background-color: #CA3C3C;
+
+  border-radius: 2px;
+
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  border: none;
+}
+
+.rating__button-negative:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.rating__button-positive {
+  display: inline-block;
+  padding: 5px 10px;
+
+  vertical-align: baseline;
+  text-align: center;
+
+  color: #fff;
+
+  font-weight: bold;
+
+  background-color: #1CB841;
+
+  border-radius: 2px;
+
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+  border: none;
+}
+
+.rating__button-positive:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.rating__result {
+  padding: 5px;
+}

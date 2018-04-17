@@ -1,5 +1,5 @@
 <div class="rating">
-  <button (click)="vote(-1)" rating__button-negative>-</button>
+  <button (click)="vote(-1)" class="rating__button-negative">-</button>
   <span class="rating__result">{{ (rating && rating.result) || 0 }}</span>
   <button (click)="vote(1)" class="rating__button-positive">+</button>
 </div>

@@ -22,7 +22,7 @@ export class RatingComponent implements OnInit {
   vote(result) {
 
     if (!this.rating) {
-      this.rating = { newsId: this.newsId, result}
+      this.rating = {newsId: this.newsId, result: result}
 
       this.ratingService.vote(this.rating);
     } else {
