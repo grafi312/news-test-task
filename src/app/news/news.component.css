@@ -38,3 +38,7 @@
 .news__text {
   font-size: 14px;
 }
+
+.news__previewText {
+  margin-bottom: 10px;
+}

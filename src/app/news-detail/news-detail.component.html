@@ -2,5 +2,7 @@
   <h1 class="news-detail__title">{{ news.title }}</h1>
   <p class="news-detail__text">{{ news.body }}</p>
   <app-rating [newsId]="news.id"></app-rating>
-  <button (click)="goToBack()">Back</button>
+</div>
+<div class="news-detail__control">
+  <button class="news__back-button" (click)="goToBack()">Back</button>
 </div>

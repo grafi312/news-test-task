@@ -19,3 +19,16 @@
 .news-detail__text {
   margin-bottom: 10px;
 }
+
+.news-detail__control {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.news__back-button {
+  padding: 5px 15px;
+}
+
+.news__back-button:hover {
+  cursor: pointer;
+}
